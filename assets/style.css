@@ -183,84 +183,23 @@ main{
 #sobreMi p span{
     font-weight: 600;
 }
-/****** articulos *******/
-.articulos{
-    display: flex;
-    width: 1200px;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-}
-.card-articulos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.card-articulos div{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    backface-visibility: hidden;
-    transition: 1s;
-}
-.card-articulos .front{
-    transform: perspective(500px) rotateY(0deg);
-}
-.card-articulos:hover .front{
-    transform: perspective(500px) rotateY(180deg);
-}
-.card-articulos .back{
-    position: absolute;
-    transform: perspective(500px) rotateY(180deg);
-    display: flex;
-    width: 200px;
-    height: auto;
-}
-.card-articulos .back h3{
-    font-family: var(--kaushan);
-    font-size: 20px;
-    color: var(--orange-int);
-}
-.card-articulos .back p{
-    font-size: 15px;
-    color: var(--orange);
-    font-family: var(--kaushan);
-    text-align: center;
-}
-.card-articulos:hover .back{
-    transform: perspective(500px) rotateY(360deg);
-}
-.card-articulos .back img{
-    border-radius: 150px;
-    width: 150px;
-    height: 150px;
-}
-.card-articulos img{
-    height: 250px;
-    width: 250px;
-    margin-top: 10px;
-    border-radius: 15px;
-    border: solid var(--orange-int);
-}
-.card-articulos a{
-    border:solid 1px var(--orange);
-    font-family: var(--kaushan);
-    color: var(--orange-int);
-    padding: 2px 20px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
-.card-articulos a:hover{
-    color: var(--black);
-    background-color: var(--orange);
-    scale: 1.1;
-}
 
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.servicio img{
+    max-width: 1200px;
+    width: 500px;
+    border: solid 2px var(--black);
+    border-radius: 25px;
+    transition: 2s;
+}
+.servicio img:hover{
+    transform: scale(1.3);
+}
 #sombreroNuevo{
     display: flex;
     flex-direction: column;
@@ -442,7 +381,83 @@ header p{
     padding: 0;
     border-radius: 15px;
 }
-
+/****** articulos *******/
+.articulos{
+    display: flex;
+    width: 1200px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.card-articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card-articulos div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.card-articulos .front{
+    transform: perspective(500px) rotateY(0deg);
+}
+.card-articulos:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.card-articulos .back{
+    position: absolute;
+    transform: perspective(500px) rotateY(180deg);
+    display: flex;
+    width: 200px;
+    height: auto;
+}
+.card-articulos .back h3{
+    font-family: var(--kaushan);
+    font-size: 20px;
+    color: var(--orange-int);
+}
+.card-articulos .back p{
+    font-size: 15px;
+    color: var(--orange);
+    font-family: var(--kaushan);
+    text-align: center;
+}
+.card-articulos:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.card-articulos .back img{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+}
+.card-articulos img{
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: solid var(--orange-int);
+}
+.card-articulos a{
+    border:solid 1px var(--orange);
+    font-family: var(--kaushan);
+    color: var(--orange-int);
+    padding: 2px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.card-articulos a:hover{
+    color: var(--black);
+    background-color: var(--orange);
+    scale: 1.1;
+}
 /******* contactos **********/
 .contacto-map{
     display: flex;

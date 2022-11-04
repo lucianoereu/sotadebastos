@@ -89,7 +89,13 @@
     font-size: 18px;
     width: auto;
   }
-  
+  .servicio{
+    max-width: 100%;
+    width: auto;
+  }
+  .servicio img{
+    max-width: 100%;
+  }
   #masSobreMi{
     max-width: 80%;
   }
