@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+:root{
+    --orange:#f39c12;
+    --white:#E1E9EE;
+    --yellow:#f4d03f;
+    --black:#6e3f05;
+    --orange2:#f5b041;
+    --orange-int:#d35400;
+    --red:#ef5539;
+    --orange-int2:#873a06;
+    --bg-box:#200f05;
+
+    --kaushan:'Kaushan Script', cursive;
+    --windsong:'Source Sans Pro', sans-serif;
+}
+
+@media (max-width: 990px){
+ /********* index ********/
+  header{
+    max-width: 100%;
+    display: flex;
+    
+  }
+  .nav-bar{
+    max-width: 95%;
+  }
+  .nav-bar-list {
+    position:absolute;
+    top: 120%;
+    right: 55%;
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 8px 45px;
+    gap: 10px;
+    z-index: 2;
+    display: none;
+    background-color: var(--white);
+  }
+ 
+  .menu-label{
+    max-width: 100%;
+    max-height: 50%;
+    display: inline;
+    font-size: 45px;
+    color: var(--orange-int2);
+    border: solid 2px var(--orange-int2);
+    border-radius: 15px;
+    padding: 5px;
+    background-color: var(--white);
+  }
+  
+  
+  #menu-toggle:checked + .nav-bar-list {
+    display: flex;
+    
+  }
+
+  .portada-img{
+    max-width: 100%;
+    }
+    .portada-img img{
+     width: 450px;
+    }
+  .portada-img h3{
+    font-size: 18px;
+  }
+
+  #sobreMi{
+    max-width: 80%;
+  }
+  #articulos{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .articulos{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .articulos-sombreros-texto p{
+    font-size: 18px;
+    width: auto;
+  }
+  
+  #masSobreMi{
+    max-width: 80%;
+  }
+  
+  /****** forma de andar  *******/
+  #info-page #articulos{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+  }
+  #info-page #articulos .articulos-sombreros{
+   max-width: 100%;
+   width: 300px;
+  }
+ 
+ 
+.contacto-map{
+  max-width: 50%;
+  max-height: 50%;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+}
+
+@media (max-width: 576px) {
+  .logo{
+    max-width: 100%;
+  }
+  .nav-bar-list{
+    padding: 5px 30px;
+  }
+  .portada-img{
+    max-width: 100%;
+  }
+  #sobreMi img{
+    width: 250px;
+  }
+  #sobreMi .sobreMi-img3{
+    width: 250px;
+
+  }
+  .portada-img img{
+    width: 255px;
+  }
+
+  .portada-img h3{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tienda{
+    max-width: 100%; 
+    width: auto;
+  }
+  .talles h2,h3{
+    font-size: 25px;
+    max-width: 100%;
+    width: auto;
+  }
+  .talles{
+    max-width: 100%;
+  }
+  .talles-img{
+    display: flex;
+    flex-direction: column;
+  }
+  .talles-img img{
+    max-width: 100%;
+    width: auto;
+  }
+  }
+  .talles p{
+    width: 80%;
+  }
+  #info-page .articulos-sombreros img{
+    width: auto;
+  }
+  .contacto-map iframe{
+    width: auto;
+  }
+  .contacto-map-info ul li a{
+   width: auto;
+   font-size: small;
+  }

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "integradorNucba_SotaDeBastos",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
